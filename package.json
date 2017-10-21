@@ -14,5 +14,10 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/anakinj/lov-app/issues"
+  },
+  "dependencies": {
+    "babel-core": "~6.26.0",
+    "babel-preset-latest": "~6.24.1",
+    "babel-preset-react": "~6.24.1"
   }
 }
