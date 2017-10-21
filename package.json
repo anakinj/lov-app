@@ -1,0 +1,18 @@
+{
+  "name": "lov-app",
+  "version": "0.0.0",
+  "description": "The app of lov",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anakinj/lov-app"
+  },
+  "author": "Joakim Antman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anakinj/lov-app/issues"
+  }
+}
