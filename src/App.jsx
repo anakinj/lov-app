@@ -1,9 +1,9 @@
 import React from 'react';
 import Counter from './Counter';
-import Dashboard from './Dashboard'
-import Second from './Second'
+import Dashboard from './Dashboard';
+import Second from './Second';
 import StuffList from './StuffList';
-import { Switch, Route, Link } from 'react-router-dom'
+import { Switch, Route, Link } from 'react-router-dom';
 
 /**
  * A counter button: tap the button to increase the count.
@@ -18,14 +18,11 @@ class App extends React.Component {
           <Link to="/second">Second</Link>
         </nav>
         <div>
-          <Route path="/dashboard" component={Dashboard}/>
-          <Route path="/second" component={Second}/>
+          <Route path="/dashboard" component={Dashboard} />
+          <Route path="/second" component={Second} />
         </div>
         <StuffList />
       </div>
-
-
-
     );
   }
 }
