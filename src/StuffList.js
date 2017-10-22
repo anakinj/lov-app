@@ -7,7 +7,7 @@ import React from 'react';
 
 class StuffList extends React.Component {
   renderData() {
-    return <div>{this.props.stuffs}</div>;
+    return <div>{this.props.stuff}</div>;
   }
   componentWillMount() {
      this.props.stuffActions.fetchStuff();
@@ -15,7 +15,7 @@ class StuffList extends React.Component {
   render() {
     return (
       <div className="">
-          {this.props.stuffs.length > 0 ?
+          {this.props.stuff.length > 0 ?
             this.renderData()
             :
             <div className="">
@@ -29,12 +29,12 @@ class StuffList extends React.Component {
 
 StuffList.propTypes = {
   stuffActions: PropTypes.object,
-  stuffs: PropTypes.array
+  stuff: PropTypes.array
 };
 
 function mapStateToProps(state) {
   return {
-    stuffs: state.stuff
+    stuff: state.stuff
   };
 }
 

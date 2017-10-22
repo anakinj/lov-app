@@ -8,10 +8,10 @@ export default function stuff(state = initialState.stuff, action) {
       console.log('FETCH_STUFF Action')
       return action;
     case RECEIVE_STUFF:
-      newState = action.stuff;
       console.log('RECEIVE_STUFF Action')
-      return newState;
+      return action.stuff;
     default:
+      console.log(state)
       return state;
   }
 }
